@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    /* display: block; */
+    justify-content: start;
+    align-items: start;
+}
+h1{
+   text-align: start;
+    color: white;
+    margin-top: 45px;
+    margin-left: 20px;
+    font-size: 3rem;
+
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+.calculator{
+    width: 100%;
+    height: 82%;
+    justify-content: end;
+    padding-bottom: 20%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 16%;
+}
+.btn{
+    height: 100%;
+    width: 22%;
+    font-size: 2.1rem;
+}
+.b-btn{
+    width: 45%;
+    border-radius: 60px;
+}
