@@ -12,34 +12,39 @@ btnArray.forEach(btn => {
     btn.addEventListener('click', (e) => {
 
         let value = e.target.innerHTML
-   
+
 
         if (value === 'AC') {
             string = '';
-            display.value = string;
+            display.innerHTML = string;
+
 
         } else if (value === '=') {
-           
+
             try {
 
                 string = eval(string).toString()
-                display.value = string;
+                display.innerHTML = string;
+
             } catch (err) {
-                display.value = "Error";
+                display.innerHTML = "Error";
 
             }
 
         } else if (value === "Del") {
             string = string.substring(0, string.length - 1)
-           
-            display.value = string
+
+            display.innerHTML = string
+
+
         }
         else {
 
             // string += value;
             string = string + value;
 
-            display.value = string;
+            display.innerHTML = string;
+
         }
 
 

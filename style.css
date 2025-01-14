@@ -1,77 +1,100 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Afacad Flux", serif;
 }
 
-h1{
+body {
+    background-color: rgb(234 240 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
     text-align: center;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
 }
 
-.calculator{
-    border: 2px solid black;
+.calculator {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
     margin-top: 40px;
-    background-color: black;
+    background-color: #aaaaaa;
     border-radius: 10px;
-    width: 280px;
-    padding-bottom: 20px;
+    padding: 10px;
 }
-.input-box{
+
+.input-box {
     margin-top: 30px;
     margin-bottom: 20px;
     color: white;
-    width: 90%;
-
-}
-.cal-input{
-height: 30px;
-background-color: black;
-border: none;
-color: white;
-border-bottom: 2px solid white;
-width: 100%;
-padding-bottom: 2px;
-font-size: 23px;
-/* outline: none; */
-}
-.btn{
-    width: 60px;
-    height: 60px;
-    color: white;
-    background: #4b4b4b;
-    border: none;
-    border-radius: 50%;
-    font-size: 22px;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: #777676;
-}
-
-.b-btn{
-    width: 120px;
-    border-radius: 30px;
-}
-.orange{
-    background-color: orange;
-}
-.orange:hover{
-    background-color: rgb(255, 191, 72);
-}
-
-body{
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    border-radius: 10px;
+    padding: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: end;
+}
+
+.cal-input {
+    height: 30px;
+    border: none;
+    color: black;
+    outline: none;
+    padding: 2px;
+    font-size: 23px;
+}
+
+.btn {
+    width: 80px;
+    height: 50px;
+    color: black;
+    background: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 5px 5px 4px #414141;
+}
+
+.btn:hover {
+    background-color: #e7e7e7;
+}
+
+
+
+.removeOperator {
+    color: #fff;
+    background-color: #1f5cd4;
+
+    &:hover {
+        background-color: #144cbc;
+
+    }
+}
+
+.assignOperator {
+
+    color: #fff;
+    background-color: #ff6f00;
+
+    &:hover {
+        background-color: #df6100;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .btn {
+        width: 60px;
+    }
 }
